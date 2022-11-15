@@ -66,23 +66,36 @@ const router = new VueRouter({
 })
 
 // router.beforeEach((to, from, next) => {
-//   // 로그인 여부
+//  //안보고 연습
 //   const isLoggedIn = false
+//   const authPage = ['login']
+//   const isRequired = !authPage.includes(to.name)
 
-//   //로그인이 필요한 페이지
-//   // const authPages = ['hello', 'home', 'about']
-//   const allowAllPages = ['login']
-
-//   // const isAuthRequired = authPages.includes(to.name)
-//   const isAuthRequired = !allowAllPages.includes(to.name)
-
-//   if (isAuthRequired && !isLoggedIn) {
-//     console.log('Login으로 이동')
-//     next({ name: 'login' })
+//   if (isRequired && !isLoggedIn) {
+//     console.log('로그인 필요!')
+//     next({name : 'login'})
 //   } else {
-//     console.log('to로 이동')
 //     next()
 //   }
-// } )
+
+
+//   // 로그인 여부
+  // const isLoggedIn = false
+
+//   //로그인이 필요한 페이지
+  // const authPages = ['hello']
+//   const allowAllPages = ['login']
+
+  // const isAuthRequired = authPages.includes(to.name)
+//   const isAuthRequired = !allowAllPages.includes(to.name)
+
+  // if (isAuthRequired && !isLoggedIn) {
+  //   console.log('Login으로 이동')
+  //   next({ name: 'login' })
+  // } else {
+  //   console.log('to로 이동')
+  //   next()
+  // }
+// })
 
 export default router

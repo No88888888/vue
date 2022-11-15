@@ -31,7 +31,7 @@ export default {
     HelloWorld,
     // 2. 등록하기
     MyComponent,
-  }
+  },
 }
 </script>
 
