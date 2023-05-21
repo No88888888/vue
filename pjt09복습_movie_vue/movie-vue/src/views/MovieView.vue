@@ -34,11 +34,10 @@ export default {
         .then((response) => {
           this.movies = response.data.results;
           console.log(this.movies);
-          return this.movies
+          return this.movies;
         })
-        .then((movie_data) =>{
-          this.$store.commit('SAVE_MOVIES', movie_data)
-          
+        .then((movie_data) => {
+          this.$store.commit("SAVE_MOVIES", movie_data);
         })
         .catch((err) => {
           console.log(err);
